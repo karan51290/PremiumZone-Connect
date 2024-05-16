@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Streaming</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        video {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <video controls id="videoPlayer" oncontextmenu="return false;">
+        <source src="Whatsapp CRM Demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        window.onload = function() {
+            var video = document.getElementById('videoPlayer');
+            video.play();
+        };
+    </script>
+</body>
+</html>
