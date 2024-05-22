@@ -2,11 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=https://wa.me/919588515128">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Redirecting, Please Wait</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Zone on Whatsapp</title>
+    <script>
+        window.onload = function() {
+            // Define the WhatsApp number here
+            const phoneNumber = '919416396336'; // <-- Update this number as needed
+
+            // Get the query parameters from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const text = urlParams.get('text');
+
+            // Define the base WhatsApp URL using the phone number
+            const whatsappUrl = `https://wa.me/${phoneNumber}`;
+
+            // Create the final URL with the text parameter if it exists
+            let finalUrl = whatsappUrl;
+            if (text) {
+                finalUrl += `?text=${encodeURIComponent(text)}`;
+            }
+
+            // Redirect to the final URL
+            window.location.href = finalUrl;
+        };
+    </script>
 </head>
 <body>
-    <!-- This content will be ignored as the page will be redirected immediately -->
+    <p>Redirecting to WhatsApp...</p>
 </body>
 </html>
