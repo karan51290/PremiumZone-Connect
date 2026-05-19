@@ -1,0 +1,14 @@
+{
+  "streams": [
+    {
+      "name": "❌SUBSCRIPTION EXPIRED",
+      "title": "Please contact your service provider to renew your access.",
+      "url": "https://file-examples.com/storage/fe77018b346a0bca3969a38/2017/04/file_example_MP4_480_1_5MG.mp4",
+      "behaviorHints": {
+        "notPeered": true,
+        "isLive": true
+      }
+    }
+  ]
+]
+
